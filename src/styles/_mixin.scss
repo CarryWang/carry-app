@@ -1,3 +1,66 @@
-$mainColor : red;
+@charset "utf-8";
 
-$testColor : yellow
+/*全局主题色[][][]*/
+/*light theme*/
+//$footer-color : #e0e0e0;
+//$bar-color : #f5f5f5;
+//$background-color : #fafafa;
+//$cards-color : #ffffff;
+
+/*Dark theme*/
+$footer-color: #000000;
+$bar-color: #212121;
+$background-color: #303030;
+$cards-color: #424242;
+
+/*浅色背景下（白色）*/
+$primary-text-l: rgba(0, 0, 0, 0.87);
+$secondary-text-l: rgba(0, 0, 0, 0.54);
+$hint-text-l: rgba(0, 0, 0, 0.38);
+
+/*暗色背景下（黑色）*/
+$primary-text-d: #ffffff;
+$secondary-text-d: rgba(255, 255, 255, 0.7);
+$hint-text-d: rgba(255, 255, 255, 0.5);
+
+/*用于分割线*/
+$dividers: rgba(0, 0, 0, 0.12);
+
+/*mixin*/
+@mixin shadowTransition {
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+/*卡片阴影 dp纵向深度*/
+@mixin card-dp1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@mixin card-dp2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@mixin card-dp3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@mixin card-dp4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@mixin card-dp5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@mixin card-hover {
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@mixin hoverShadow {
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+    z-index: 1;
+  }
+}

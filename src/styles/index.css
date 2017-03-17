@@ -1,9 +1,27 @@
+@charset "UTF-8";
+/*全局主题色[][][]*/
+/*light theme*/
+/*Dark theme*/
+/*浅色背景下（白色）*/
+/*暗色背景下（黑色）*/
+/*用于分割线*/
+/*mixin*/
+/*卡片阴影 dp纵向深度*/
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: 'Roboto', 'Microsoft YaHei', sans-serif; }
 
-.app {
-  width: 300px;
-  height: 200px;
-  background-color: aqua; }
+.myNav {
+  height: 256px;
+  background-color: rebeccapurple; }
+
+.card {
+  position: relative;
+  height: 640px;
+  background-color: aqua;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.card:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 1; }
