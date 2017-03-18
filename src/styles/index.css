@@ -13,15 +13,107 @@ body {
   font-family: 'Roboto', 'Microsoft YaHei', sans-serif; }
 
 .myNav {
-  height: 256px;
-  background-color: rebeccapurple; }
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+  transition: 0.1s linear;
+  padding: 0 16px;
+  color: #ffffff; }
+
+.nav-bgColor {
+  background-color: rebeccapurple;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.myBanner {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  height: 500px;
+  background-image: linear-gradient(145deg, #1a9aca 0%, #68d9da 100%); }
+
+.myTitle {
+  padding: 50px;
+  text-align: center;
+  background: url("../images/oronge.png") fixed; }
 
 .card {
   position: relative;
-  height: 640px;
+  height: 300px;
   background-color: aqua;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .card:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   z-index: 1; }
+
+.photo-item {
+  height: 300px;
+  position: relative;
+  text-align: center; }
+
+.photo-item .photo-mask {
+  padding-top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 105, 180, 0.53);
+  transition: 0.2s;
+  overflow: hidden;
+  opacity: 0; }
+
+.photo-item h1, .photo-item p {
+  opacity: 0;
+  transform: scale(2);
+  transition: 0.2s; }
+
+.photo-item:hover .photo-mask {
+  opacity: 1; }
+
+.photo-item:hover h1, .photo-item:hover p {
+  transform: scale(1);
+  opacity: 1; }
+
+.myContact {
+  height: 300px;
+  background-color: #1a9aca; }
+
+.img1 {
+  background: url("../images/wallhaven1.jpg"); }
+
+.mySvgBox {
+  height: 600px;
+  background-color: #61ff8c;
+  position: relative;
+  overflow: hidden;
+  perspective: 2000px; }
+
+.mySvgBox > div {
+  position: absolute; }
+
+.mySvgBox .svg1 {
+  left: 0;
+  bottom: 0; }
+
+.mySvgBox .svg2 {
+  right: 0;
+  top: 90px; }
+
+.mySvgBox .svg3 {
+  right: 150px;
+  top: 60px; }
+
+.mySvgBox .svg4 {
+  left: 0;
+  top: 100px; }
+
+.mySvgBox .svg5 {
+  right: 0;
+  bottom: 50px; }
+
+.mySvgBox .svg6 {
+  left: 50px;
+  top: 270px; }

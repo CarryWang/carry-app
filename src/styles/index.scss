@@ -7,14 +7,128 @@ body {
 }
 
 .myNav{
-  height: 256px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top:0;
+  background-color: transparent;
+  z-index: 100;
+  transition: 0.1s linear;
+  padding: 0 16px;
+  color: $primary-text-d;
+}
+
+.nav-bgColor{
   background-color: rebeccapurple;
+  @include card-dp4;
+}
+
+
+.myBanner{
+  @include card-dp3;
+  position: relative;
+  height: 500px;
+  background-image: linear-gradient(145deg, #1a9aca 0%, #68d9da 100%);
+}
+
+.myTitle{
+  padding: 50px;
+  text-align: center;
+  background: url("../images/oronge.png") fixed;
 }
 
 .card{
   position: relative;
-  height: 640px;
+  height: 300px;
   background-color: aqua;
   @include hoverShadow;
   @include shadowTransition;
+}
+
+.photo-item{
+  height: 300px;
+  position: relative;
+  text-align: center;
+
+
+  .photo-mask{
+    padding-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 105, 180, 0.53);
+    transition: 0.2s;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+
+  h1,p{
+    opacity: 0;
+    transform: scale(2);
+    transition: 0.2s;
+  }
+
+
+
+  &:hover{
+
+    .photo-mask{
+      opacity: 1;
+    }
+
+
+    h1,p{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+
+.myContact{
+  height: 300px;
+  background-color: #1a9aca;
+}
+.img1{
+  background: url("../images/wallhaven1.jpg");
+}
+
+.mySvgBox{
+  height: 600px;
+  background-color: #61ff8c;
+  position: relative;
+  overflow: hidden;
+  perspective: 2000px;
+  &>div{
+    position: absolute;
+  }
+
+  .svg1{
+    left: 0;
+    bottom: 0;
+  }
+  .svg2{
+    right: 0;
+    top: 90px;
+  }
+  .svg3{
+    right: 150px;
+    top: 60px;
+  }
+  .svg4{
+    left: 0;
+    top: 100px;
+  }
+  .svg5{
+    right: 0;
+    bottom: 50px;
+  }
+  .svg6{
+    left: 50px;
+    top: 270px;
+  }
+
 }
