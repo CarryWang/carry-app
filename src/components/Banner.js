@@ -9,7 +9,9 @@ export default class Banner extends Component {
         return (
             <div className="myBanner">
                 <div className="banner-container">
-                    <img src="http://p1.bpimg.com/567571/da594e293dc375d4.jpg" alt="avatar"/>
+                    <div className="banner-img">
+                        <img src="http://p1.bpimg.com/567571/da594e293dc375d4.jpg" alt="avatar"/>
+                    </div>
                     <h1 className="banner-title">Carry Wang</h1>
                 </div>
             </div>
