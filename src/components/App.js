@@ -8,12 +8,12 @@ import SvgBox from './SvgBox'
 // import img1 from '../images/wallhaven1.jpg'
 
 let obj = {
-    title: 'fggrgrrr',
-    name: 'fefe'
+    title: 'Cases',
+    name: 'Some Example Design Patterns'
 }
 let obj2 = {
-    title: 'fefegergr',
-    name: 'grgrgr'
+    title: 'Works',
+    name: 'Some Works'
 }
 
 
@@ -26,9 +26,9 @@ class App extends Component {
                 <Title {...obj}/>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-6 card img1" >
+                        <a className="col-sm-6 card img1" href="https://carrywang.github.io/demo/3dCard/index.html">
 
-                        </div>
+                        </a>
                         <div className="col-sm-6 card img2">
 
                         </div>

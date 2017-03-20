@@ -36,7 +36,7 @@ body {
 .myTitle {
   padding: 50px;
   text-align: center;
-  background: url("../images/oronge.png") fixed; }
+  background: url("http://i1.piimg.com/567571/ebef5cd03ab0d7fc.png") fixed; }
 
 .card {
   position: relative;
@@ -82,7 +82,7 @@ body {
   background-color: #1a9aca; }
 
 .img1 {
-  background: url("../images/wallhaven1.jpg"); }
+  background: linear-gradient(to left, #7474BF, #348AC7); }
 
 .mySvgBox {
   height: 600px;
