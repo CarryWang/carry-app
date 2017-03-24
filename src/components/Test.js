@@ -22,9 +22,9 @@ export default class Test extends Component {
             <Parallax ref="parallax" pages={3}>
 
                 <Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#243B4A' }} />
-                <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
+                <Parallax.Layer offset={1} speed={1} style={{ backgroundColor: '#ff6291' }} />
                 <Parallax.Layer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
-                <Parallax.Layer offset={0} speed={1} style={{ backgroundImage: `url(${stars})`,backgroundSize:'cover'}} />
+                <Parallax.Layer style={{ backgroundImage: `url(${stars})`,backgroundSize:'cover',height:'inherit'}} />
 
                 <Parallax.Layer
                     offset={0}
