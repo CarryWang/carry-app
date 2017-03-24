@@ -8,6 +8,8 @@ import Photos from './Photos'
 import CardBox from './CardBox'
 import SvgBox from './SvgBox'
 import Load from './Load'
+import Test from './Test'
+// import GithubCorner from './GithubCorner'
 
 
 let obj = {
@@ -25,14 +27,20 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dom: this.loadingDom
+            dom: this.testDom
         }
     }
 
-    componentDidMount() {
-        setTimeout(()=> {
-            this.setState({dom: this.mainDom})
-        }, 4000)
+    //componentDidMount() {
+    //    setTimeout(()=> {
+    //        this.setState({dom: this.mainDom})
+    //    }, 4000)
+    //}
+
+    testDom = ()=>{
+        return(
+            <Test/>
+        )
     }
 
     mainDom = ()=> {

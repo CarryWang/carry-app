@@ -342,3 +342,32 @@ body {
   opacity: 1;
   transition: opacity .5s ease-in;
 }
+
+//github-corner
+.github-corner{
+  display: block;
+  position: absolute;
+  color: white;
+  fill:$primary-color;
+  top:0;
+  right: 0;
+  &:hover,&:focus{
+    color: white;
+    fill:$primary-color;
+    .octo-arm{
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
