@@ -34,7 +34,7 @@ a {
 }
 
 .nav-bgColor {
-  background-color: $primary-color;
+  background: linear-gradient(to left, #f857a6 , #ff5858);
   @include card-dp4;
 }
 
@@ -51,7 +51,7 @@ a {
   &:after {
     @include beforeAfter;
     z-index: -1;
-    background: rgba(156, 39, 176, 0.4);
+    background: linear-gradient(to right, rgba(250, 108, 159, 0.1) 0%, rgba(255, 225, 64, 0.1) 80%, rgba(255, 225, 64, 0.1) 100%);
   }
 }
 
@@ -73,12 +73,17 @@ a {
     background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0 / cover fixed;
     filter: blur(5px);
   }
+  &:after{
+    @include beforeAfter;
+    background: linear-gradient(to right, rgba(250, 108, 159, 0.5) 0%, rgba(255, 225, 64, 0.5) 80%, rgba(255, 225, 64, 0.5) 100%);
+    z-index: -1;
+  }
 
   .banner-img {
-    border: 6px solid white;
-    width: 12rem;
-    height: 12rem;
-    padding: 10px;
+    //border: 6px solid white;
+    width: 200px;
+    height: 200px;
+    //padding: 10px;
     border-radius: 50%;
   }
   img {
@@ -99,8 +104,8 @@ a {
   white-space: nowrap;
   position: relative;
   border-right: 2px solid;
-  color: white;
-  font-size: 80px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 50px;
   animation: coding 4s steps(10),
   flash 1s steps(1) infinite,
   stopFlash 0.1s 4s steps(1) forwards,
@@ -108,6 +113,31 @@ a {
   fontChange 0.1s 5s forwards,
   rubberBand 1s 5s forwards,
   rotate 0.1s 6.5s forwards;
+
+  &:before,&:after{
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    height: 4px;
+    content: '';
+    background: rgba(255, 255, 255, 0.9);
+  }
+  &:before{
+    left: 0;
+    margin-left: -50px;
+  }
+  &:after{
+    right: 0;
+    margin-right: -50px;
+  }
+
+}
+
+.banner-desc{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
 }
 
 @media (max-width: 425px) {
@@ -197,7 +227,10 @@ a {
 .myTitle {
   padding: 50px;
   text-align: center;
-  background: url("http://i1.piimg.com/567571/ebef5cd03ab0d7fc.png") fixed;
+  //background: url("http://i1.piimg.com/567571/ebef5cd03ab0d7fc.png") fixed;
+  background: linear-gradient(to left, #606c88 , #3f4c6b);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 //CardBox
@@ -206,7 +239,8 @@ a {
   padding: 150px 75px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23), 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
   z-index: 1;
-  background-color: #f5f5f5;
+  background: linear-gradient(to right, #52A0FD 0%, #00e2fa 80%, #00e2fa 100%);
+
 }
 
 .card {
@@ -283,13 +317,13 @@ a {
 //Contact
 .myContact {
   height: 300px;
-  background-color: #1a9aca;
+  background: linear-gradient(to right, #52A0FD 0%, #00e2fa 80%, #00e2fa 100%);
 }
 
 //SvgBox
 .mySvgBox {
   height: 600px;
-  background-color: #61ff8c;
+  background: linear-gradient(to right, #44ea76 0%, #39fad7 80%, #39fad7 100%);
   position: relative;
   overflow: hidden;
   perspective: 2000px;
@@ -330,7 +364,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #d1b343;
+  background: linear-gradient(to right, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
   display: flex;
   justify-content: center;
   align-items: center;

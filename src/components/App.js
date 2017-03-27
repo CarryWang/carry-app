@@ -34,14 +34,14 @@ export default class App extends Component {
     componentDidMount() {
        setTimeout(()=> {
            this.setState({dom: this.mainDom})
-       }, 4000)
+       }, 3000)
     }
 
     testDom = ()=>{
         return(
             <Test/>
         )
-    }
+    };
 
     mainDom = ()=> {
         return (
