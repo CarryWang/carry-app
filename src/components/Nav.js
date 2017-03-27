@@ -20,7 +20,6 @@ export default class Nav extends Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
     handleScroll=(e) =>{
-        console.log(window.innerHeight)
         let winHeight = window.innerHeight;
         let winScroll = window.scrollY;
         if(winScroll>(winHeight - 70)){

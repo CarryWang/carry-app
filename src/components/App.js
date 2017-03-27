@@ -27,15 +27,15 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dom: this.testDom
+            dom: this.loadingDom
         }
     }
 
-    //componentDidMount() {
-    //    setTimeout(()=> {
-    //        this.setState({dom: this.mainDom})
-    //    }, 4000)
-    //}
+    componentDidMount() {
+       setTimeout(()=> {
+           this.setState({dom: this.mainDom})
+       }, 4000)
+    }
 
     testDom = ()=>{
         return(

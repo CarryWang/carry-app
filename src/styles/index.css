@@ -17,6 +17,13 @@ body {
   padding: 0;
   font-family: 'Roboto', 'Microsoft YaHei', sans-serif; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: inherit; }
+
 .myNav {
   position: fixed;
   width: 100%;
@@ -159,15 +166,40 @@ body {
   text-align: center;
   background: url("http://i1.piimg.com/567571/ebef5cd03ab0d7fc.png") fixed; }
 
+.CardBox {
+  position: relative;
+  padding: 150px 75px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23), 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+  z-index: 1;
+  background-color: #f5f5f5; }
+
 .card {
   display: block;
   position: relative;
-  height: 300px;
-  background-color: aqua;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .card:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    z-index: 1; }
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; }
+  .card h1 {
+    margin: 24px 16px 16px;
+    font-size: 20px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.54); }
+  .card p {
+    margin: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.38); }
+
+.Photos {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23), 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
+  position: relative; }
 
 .photo-item {
   height: 300px;
@@ -203,7 +235,8 @@ body {
   background-color: #61ff8c;
   position: relative;
   overflow: hidden;
-  perspective: 2000px; }
+  perspective: 2000px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .mySvgBox > div {
     position: absolute; }
   .mySvgBox .svg1 {

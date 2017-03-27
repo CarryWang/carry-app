@@ -7,7 +7,7 @@ import dataList from '../datas/photos.json'
 export default class Photos extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid Photos">
                 <div className="row">
                     {dataList.map((item,i) => {
                         const style = {background: `url(${item.url}) center center / cover`};
