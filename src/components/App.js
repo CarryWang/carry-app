@@ -8,7 +8,7 @@ import Photos from './Photos'
 import CardBox from './CardBox'
 import SvgBox from './SvgBox'
 import Load from './Load'
-import Test from './Test'
+// import Test from './Test'
 // import GithubCorner from './GithubCorner'
 
 
@@ -27,20 +27,27 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dom: this.loadingDom
+            dom: this.testDom
         }
     }
 
-    componentDidMount() {
-       setTimeout(()=> {
-           this.setState({dom: this.mainDom})
-       }, 3000)
-    }
+    // componentDidMount() {
+    //    setTimeout(()=> {
+    //        this.setState({dom: this.mainDom})
+    //    }, 3000)
+    // }
 
     testDom = ()=>{
         return(
-            <Test/>
+            <img style={{opacity:0}}
+                 alt="首屏渲染勾子"
+                 src="http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg"
+                 onLoad={this.onLoadHandler}/>
         )
+    };
+
+    onLoadHandler=()=>{
+        this.setState({dom: this.mainDom})
     };
 
     mainDom = ()=> {
