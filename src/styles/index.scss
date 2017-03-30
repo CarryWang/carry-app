@@ -46,12 +46,13 @@ a {
   height: 100vh;
   z-index: 0;
   overflow: hidden;
-  background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0 / cover fixed;
+  //background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0 / cover fixed;
+  background-color: #161722;
 
   &:after {
     @include beforeAfter;
     z-index: -1;
-    background: linear-gradient(to right, rgba(250, 108, 159, 0.1) 0%, rgba(255, 225, 64, 0.1) 80%, rgba(255, 225, 64, 0.1) 100%);
+    //background: linear-gradient(to right, rgba(250, 108, 159, 0.1) 0%, rgba(255, 225, 64, 0.1) 80%, rgba(255, 225, 64, 0.1) 100%);
   }
 }
 
@@ -61,8 +62,8 @@ a {
   flex-direction: column;
   position: relative;
   z-index: 0;
-  width: calc(100% - 150px);
-  height: calc(100% - 150px);
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
   overflow: hidden;
   border-radius: 2px;
   perspective: 1000px;
@@ -70,12 +71,15 @@ a {
   &:before {
     @include beforeAfter(-50px);
     z-index: -1;
-    background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0 / cover fixed;
+    //background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0 / cover fixed;
+
+    background-blend-mode: multiply, screen;
     filter: blur(5px);
   }
   &:after{
     @include beforeAfter;
-    background: linear-gradient(to right, rgba(250, 108, 159, 0.5) 0%, rgba(255, 225, 64, 0.5) 80%, rgba(255, 225, 64, 0.5) 100%);
+
+    //background: linear-gradient(to right, rgba(250, 108, 159, 0.5) 0%, rgba(255, 225, 64, 0.5) 80%, rgba(255, 225, 64, 0.5) 100%);
     z-index: -1;
   }
 
@@ -95,8 +99,14 @@ a {
   }
 }
 
+//.test-title{
+//  font-family: 'Monoton', cursive;
+//  color: white;
+//}
+
 .banner-title {
   font-family: 'Source Code Pro', monospace;
+  //font-family: 'Monoton', cursive;
   margin: 50px 0;
   text-align: left;
   width: 10ch; /* 文本的宽度 */

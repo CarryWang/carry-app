@@ -9,11 +9,13 @@ export default class Banner extends Component {
         return (
             <div className="myBanner">
                 <div className="banner-container">
-                    <div className="banner-img">
-                        <img src="http://p1.bpimg.com/567571/da594e293dc375d4.jpg" alt="avatar"/>
-                    </div>
+                    {/*<div className="banner-img">*/}
+                        {/*<img src="http://p1.bpimg.com/567571/da594e293dc375d4.jpg" alt="avatar"/>*/}
+                    {/*</div>*/}
                     <h1 className="banner-title">Carry Wang</h1>
-                    <p className="banner-desc">Design, Code & Things in Between </p>
+                    {/*<p className="banner-desc">Design, Code & Things in Between </p>*/}
+                    {/*<h1 className="test-title">hi,there</h1>*/}
+
                 </div>
             </div>
         )

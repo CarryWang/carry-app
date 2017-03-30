@@ -5,7 +5,9 @@ import React from 'react';
 
 const Contact = ()=>(
     <div className="myContact">
-
+        Let's work together.
+        HOPE YOU ENJOYED THE VISIT
+        FEEL FREE TO CONTACT ME ANYTIME
     </div>
 );
 
