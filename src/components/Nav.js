@@ -20,8 +20,9 @@ export default class Nav extends Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
     handleScroll=(e) =>{
+        let winHeight = window.innerHeight;
         let winScroll = window.scrollY;
-        if(winScroll>430){
+        if(winScroll>(winHeight - 70)){
             this.setState({
                 isOpacity:true
             })
@@ -37,7 +38,7 @@ export default class Nav extends Component {
         return (
             <div ref='myNav'
                  className={`myNav ${isOpacity?'nav-bgColor':null}`}>
-                <h1>Carry Wang</h1>
+                
 
             </div>
         );

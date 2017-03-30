@@ -1,6 +1,11 @@
 @charset "utf-8";
 
-/*全局主题色[][][]*/
+/*全局主题色*/
+
+/*主色*/
+$primary-color: rgb(156, 39, 176);
+
+
 /*light theme*/
 //$footer-color : #e0e0e0;
 //$bar-color : #f5f5f5;
@@ -63,4 +68,19 @@ $dividers: rgba(0, 0, 0, 0.12);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
     z-index: 1;
   }
+}
+
+@mixin beforeAfter($offset:0){
+  position: absolute;
+  content: '';
+  top: $offset;
+  bottom: $offset;
+  left: $offset;
+  right: $offset;
+}
+
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
