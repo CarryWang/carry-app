@@ -8,7 +8,7 @@ import Photo from './Photo'
 import CardBox from './CardBox'
 import SvgBox from './SvgBox'
 import Load from './Load'
-import AboutMe from './About'
+import About from './About'
 // import Test from './Test'
 // import GithubCorner from './GithubCorner'
 import CodeTest from './CodeTest'
@@ -64,8 +64,8 @@ export default class App extends Component {
                 transitionLeaveTimeout={300}>
                 <Nav/>
                 {/*<Banner/>*/}
-                {/*<AboutMe/>*/}
-                <Skill/>
+                <About/>
+                {/*<Skill/>*/}
                 {/*<CardBox/>*/}
                 {/*<SvgBox/>*/}
                 {/*<Title {...obj2}/>*/}

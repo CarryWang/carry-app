@@ -38,8 +38,6 @@ export default class Nav extends Component {
         return (
             <div ref='myNav'
                  className={`myNav ${isOpacity?'nav-bgColor':null}`}>
-                
-
             </div>
         );
     }
