@@ -4,13 +4,15 @@ import Nav from './Nav';
 import Banner from './Banner';
 import Title from './Title';
 import Contact from './Contact'
-import Photos from './Photos'
+import Photo from './Photo'
 import CardBox from './CardBox'
 import SvgBox from './SvgBox'
 import Load from './Load'
-import AboutMe from './AboutMe'
+import About from './About'
 // import Test from './Test'
 // import GithubCorner from './GithubCorner'
+import CodeTest from './CodeTest'
+import Skill from './Skill'
 
 
 let obj = {
@@ -28,7 +30,11 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+<<<<<<< HEAD
             dom: this.loadingDom
+=======
+            dom: this.mainDom
+>>>>>>> 2bb67197814e19b10f780c27791e21bda41e2707
         }
     }
 
@@ -61,13 +67,14 @@ export default class App extends Component {
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={300}>
                 <Nav/>
-                <Banner/>
-                <AboutMe/>
-                <CardBox/>
-                <SvgBox/>
-                <Title {...obj2}/>
-                <Photos/>
-                <Contact/>
+                {/*<Banner/>*/}
+                <About/>
+                {/*<Skill/>*/}
+                {/*<CardBox/>*/}
+                {/*<SvgBox/>*/}
+                {/*<Title {...obj2}/>*/}
+                {/*<Photo/>*/}
+                {/*<Contact/>*/}
             </ReactCSSTransitionGroup>
         )
     };
@@ -81,7 +88,7 @@ export default class App extends Component {
                 transitionAppearTimeout={500}
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={300}>
-                <Load/>
+                <CodeTest/>
             </ReactCSSTransitionGroup>
         )
     };
