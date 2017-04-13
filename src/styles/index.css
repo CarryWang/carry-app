@@ -20,10 +20,9 @@ body {
 a {
   text-decoration: none;
   color: inherit; }
-
-a:hover, a:focus {
-  text-decoration: none;
-  color: inherit; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: inherit; }
 
 .myNav {
   position: fixed;
@@ -53,16 +52,15 @@ a:hover, a:focus {
   z-index: -1;
   overflow: hidden;
   background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0/cover fixed; }
-
-.myBanner:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(22, 23, 34, 0.9);
-  z-index: -1; }
+  .myBanner:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(22, 23, 34, 0.9);
+    z-index: -1; }
 
 .banner-container {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -77,27 +75,25 @@ a:hover, a:focus {
   overflow: hidden;
   border-radius: 2px;
   perspective: 1000px; }
-
-.banner-container:before {
-  position: absolute;
-  content: '';
-  top: -50px;
-  bottom: -50px;
-  left: -50px;
-  right: -50px;
-  z-index: -1;
-  background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0/cover fixed;
-  filter: blur(5px); }
-
-.banner-container:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(22, 23, 34, 0.98);
-  z-index: -1; }
+  .banner-container:before {
+    position: absolute;
+    content: '';
+    top: -50px;
+    bottom: -50px;
+    left: -50px;
+    right: -50px;
+    z-index: -1;
+    background: url("http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg") 0/cover fixed;
+    filter: blur(5px); }
+  .banner-container:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(22, 23, 34, 0.98);
+    z-index: -1; }
 
 .head-animation {
   background: url("../images/h1.png") center center/cover;
@@ -133,22 +129,19 @@ a:hover, a:focus {
   color: rgba(255, 255, 255, 0.9);
   font-size: 50px;
   animation: coding 4s steps(10), flash 1s steps(1) infinite, stopFlash 0.1s 4s steps(1) forwards, fontFlash 0.5s 4s forwards, fontChange 0.1s 5s forwards, rubberBand 1s 5s forwards, rotate 0.1s 6.5s forwards; }
-
-.banner-title:before, .banner-title:after {
-  position: absolute;
-  top: 30px;
-  width: 30px;
-  height: 4px;
-  content: '';
-  background: rgba(255, 255, 255, 0.9); }
-
-.banner-title:before {
-  left: 0;
-  margin-left: -50px; }
-
-.banner-title:after {
-  right: 0;
-  margin-right: -50px; }
+  .banner-title:before, .banner-title:after {
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    height: 4px;
+    content: '';
+    background: rgba(255, 255, 255, 0.9); }
+  .banner-title:before {
+    left: 0;
+    margin-left: -50px; }
+  .banner-title:after {
+    right: 0;
+    margin-right: -50px; }
 
 .banner-desc {
   color: rgba(255, 255, 255, 0.9);
@@ -238,25 +231,21 @@ a:hover, a:focus {
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover; }
-
-.card h1 {
-  margin: 24px 16px 16px;
-  font-size: 20px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.54); }
-
-.card p {
-  margin: 16px;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.38); }
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; }
+  .card h1 {
+    margin: 24px 16px 16px;
+    font-size: 20px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.54); }
+  .card p {
+    margin: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.38); }
 
 .Photos {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23), 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
@@ -266,30 +255,26 @@ a:hover, a:focus {
   height: 300px;
   position: relative;
   text-align: center; }
-
-.photo-item .photo-mask {
-  padding-top: 100px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 105, 180, 0.53);
-  transition: 0.2s;
-  overflow: hidden;
-  opacity: 0; }
-
-.photo-item h1, .photo-item p {
-  opacity: 0;
-  transform: scale(2);
-  transition: 0.2s; }
-
-.photo-item:hover .photo-mask {
-  opacity: 1; }
-
-.photo-item:hover h1, .photo-item:hover p {
-  transform: scale(1);
-  opacity: 1; }
+  .photo-item .photo-mask {
+    padding-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 105, 180, 0.53);
+    transition: 0.2s;
+    overflow: hidden;
+    opacity: 0; }
+  .photo-item h1, .photo-item p {
+    opacity: 0;
+    transform: scale(2);
+    transition: 0.2s; }
+  .photo-item:hover .photo-mask {
+    opacity: 1; }
+  .photo-item:hover h1, .photo-item:hover p {
+    transform: scale(1);
+    opacity: 1; }
 
 .myContact {
   height: 300px;
@@ -302,33 +287,26 @@ a:hover, a:focus {
   overflow: hidden;
   perspective: 2000px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
-.mySvgBox > div {
-  position: absolute; }
-
-.mySvgBox .svg1 {
-  left: 0;
-  bottom: 0; }
-
-.mySvgBox .svg2 {
-  right: 0;
-  top: 90px; }
-
-.mySvgBox .svg3 {
-  right: 150px;
-  top: 60px; }
-
-.mySvgBox .svg4 {
-  left: 0;
-  top: 100px; }
-
-.mySvgBox .svg5 {
-  right: 0;
-  bottom: 50px; }
-
-.mySvgBox .svg6 {
-  left: 50px;
-  top: 270px; }
+  .mySvgBox > div {
+    position: absolute; }
+  .mySvgBox .svg1 {
+    left: 0;
+    bottom: 0; }
+  .mySvgBox .svg2 {
+    right: 0;
+    top: 90px; }
+  .mySvgBox .svg3 {
+    right: 150px;
+    top: 60px; }
+  .mySvgBox .svg4 {
+    left: 0;
+    top: 100px; }
+  .mySvgBox .svg5 {
+    right: 0;
+    bottom: 50px; }
+  .mySvgBox .svg6 {
+    left: 50px;
+    top: 270px; }
 
 .myLoad {
   position: absolute;
@@ -384,13 +362,11 @@ a:hover, a:focus {
   fill: #9c27b0;
   top: 0;
   right: 0; }
-
-.github-corner:hover, .github-corner:focus {
-  color: white;
-  fill: #9c27b0; }
-
-.github-corner:hover .octo-arm, .github-corner:focus .octo-arm {
-  animation: octocat-wave 560ms ease-in-out; }
+  .github-corner:hover, .github-corner:focus {
+    color: white;
+    fill: #9c27b0; }
+    .github-corner:hover .octo-arm, .github-corner:focus .octo-arm {
+      animation: octocat-wave 560ms ease-in-out; }
 
 @keyframes octocat-wave {
   0%, 100% {
@@ -413,15 +389,14 @@ a:hover, a:focus {
   padding: 48px;
   text-align: right;
   font-family: 'Monoton'; }
-
-.public-title:before {
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
-  background-color: #000000;
-  right: 24px;
-  top: 24px; }
+  .public-title:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    right: 24px;
+    top: 24px; }
 
 .read-me {
   padding-left: 24px;
