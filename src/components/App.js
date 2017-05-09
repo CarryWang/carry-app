@@ -62,9 +62,9 @@ export default class App extends Component {
                 transitionAppearTimeout={500}
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={300}>
-                <Nav/>
-                {/*<Banner/>*/}
-                <About/>
+                {/*<Nav/>*/}
+                <Banner/>
+                {/*<About/>*/}
                 {/*<Skill/>*/}
                 {/*<CardBox/>*/}
                 {/*<SvgBox/>*/}
