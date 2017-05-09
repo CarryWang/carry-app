@@ -11,7 +11,6 @@ import Load from './Load'
 import About from './About'
 // import Test from './Test'
 // import GithubCorner from './GithubCorner'
-import CodeTest from './CodeTest'
 import Skill from './Skill'
 
 
@@ -30,21 +29,11 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-<<<<<<< HEAD
-            dom: this.loadingDom
-=======
-            dom: this.mainDom
->>>>>>> 2bb67197814e19b10f780c27791e21bda41e2707
+            dom: this.hookDom
         }
     }
 
-    // componentDidMount() {
-    //    setTimeout(()=> {
-    //        this.setState({dom: this.mainDom})
-    //    }, 3000)
-    // }
-
-    testDom = ()=>{
+    hookDom = ()=>{
         return(
             <img style={{opacity:0,position:'fixed'}}
                  alt="首屏渲染勾子"
@@ -75,20 +64,6 @@ export default class App extends Component {
                 {/*<Title {...obj2}/>*/}
                 {/*<Photo/>*/}
                 {/*<Contact/>*/}
-            </ReactCSSTransitionGroup>
-        )
-    };
-
-    loadingDom = ()=> {
-        return (
-            <ReactCSSTransitionGroup
-                component="div"
-                transitionName="example"
-                transitionAppear={true}
-                transitionAppearTimeout={500}
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={300}>
-                <CodeTest/>
             </ReactCSSTransitionGroup>
         )
     };

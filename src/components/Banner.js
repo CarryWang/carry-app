@@ -2,7 +2,7 @@
  * Created by Carry Wang on 2017/3/18.
  */
 import React, { Component } from 'react';
-import svg from '../images/shapes-light.svg'
+// import svg from '../images/shapes-light.svg'
 
 
 export default class Banner extends Component {
