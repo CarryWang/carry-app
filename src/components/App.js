@@ -1,78 +1,19 @@
 import React, {Component} from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import Nav from './Nav';
-import Banner from './Banner';
-import Title from './Title';
-import Contact from './Contact'
-import Photo from './Photo'
-import CardBox from './CardBox'
-import SvgBox from './SvgBox'
-import Load from './Load'
-import About from './About'
-// import Test from './Test'
-// import GithubCorner from './GithubCorner'
-import Skill from './Skill'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import Home from './Home'
+import Chapter1 from './Chapter1'
 
-
-let obj = {
-    title: 'Cases',
-    name: 'Some Example Design Patterns'
-
-};
-let obj2 = {
-    title: 'Works',
-    name: 'Some Works'
+const App = () => {
+    return (
+        <Router>
+            <div>
+                <Route exact path="/" component={Chapter1}/>
+                <Route path="/home" component={Home}/>
+            </div>
+        </Router>
+    )
 };
 
-
-export default class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            dom: this.hookDom
-        }
-    }
-
-    hookDom = ()=>{
-        return(
-            <img style={{opacity:0,position:'fixed'}}
-                 alt="首屏渲染勾子"
-                 src="http://p1.bqimg.com/567571/db48a6c4ee347b14.jpg"
-                 onLoad={this.onLoadHandler}/>
-        )
-    };
-
-    onLoadHandler=()=>{
-        this.setState({dom: this.mainDom})
-    };
-
-    mainDom = ()=> {
-        return (
-            <ReactCSSTransitionGroup
-                component="div"
-                transitionName="example"
-                transitionAppear={true}
-                transitionAppearTimeout={500}
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={300}>
-                {/*<Nav/>*/}
-                <Banner/>
-                {/*<About/>*/}
-                {/*<Skill/>*/}
-                {/*<CardBox/>*/}
-                {/*<SvgBox/>*/}
-                {/*<Title {...obj2}/>*/}
-                {/*<Photo/>*/}
-                {/*<Contact/>*/}
-            </ReactCSSTransitionGroup>
-        )
-    };
-
-    render() {
-        return this.state.dom();
-    }
-}
-
-
+export default App;
 
 
