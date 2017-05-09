@@ -388,7 +388,11 @@ a {
   font-size: 50px;
   padding: 48px;
   text-align: right;
+<<<<<<< HEAD
+  font-family: 'Monoton'; }
+=======
   font-family: 'Bowlby One SC', sans-serif; }
+>>>>>>> 2bb67197814e19b10f780c27791e21bda41e2707
   .public-title:before {
     position: absolute;
     content: '';

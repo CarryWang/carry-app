@@ -30,7 +30,11 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+<<<<<<< HEAD
+            dom: this.loadingDom
+=======
             dom: this.mainDom
+>>>>>>> 2bb67197814e19b10f780c27791e21bda41e2707
         }
     }
 
