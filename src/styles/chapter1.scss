@@ -1,0 +1,70 @@
+.chapter1{
+  background: url("http://p1.bpimg.com/567571/9402e55db28942fa.jpg") center center no-repeat / cover;
+  min-height: 100vh;
+  padding: 24px;
+
+  h1{
+    margin: 88px 0;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 2px;
+    line-height: 1;
+    color: white;
+    font-weight: normal;
+    //background-color: rgba(68, 234, 118, 0.67);
+  }
+
+  .flexBox{
+    display: flex;
+    justify-content: center;
+  }
+
+  @mixin baseBox{
+    /* styling */
+    color: white;
+    max-width: 20em;
+    padding: 2em;
+    margin: 2em auto 0;
+    font: 100%/1.5 sans-serif;
+  }
+
+  //半透明边框
+  .box1-1{
+    @include baseBox;
+    color: #333333;
+    border: 10px solid hsla(0,0%,100%,.5);
+    background: white;
+    background-clip: padding-box;
+  }
+
+  //多重边框
+  .box2-1{
+    @include baseBox;
+    background: #cda83c;
+    box-shadow: 0 0 0 10px #56cdc9, 0 0 0 15px #ed74b4;
+  }
+
+  .box2-2{
+    @include baseBox;
+    background: #c786ea;
+    border: 10px solid #5ed3e7;
+    outline: 5px solid #ff6471;
+  }
+
+  .box2-3{
+    @include baseBox;
+    background: #70d1ea;
+    outline: 2px dashed #0c1327;
+    outline-offset: -10px;
+  }
+
+  //灵活的背景定位
+  .box3-1{
+    @include baseBox;
+    background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+    background-position: right 20px bottom 10px;
+  }
+  .box3-2{
+    
+  }
+}
