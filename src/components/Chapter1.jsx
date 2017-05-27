@@ -38,6 +38,12 @@ export default class Chapter1 extends Component{
                         Code Pirate
                     </div>
                 </div>
+
+                <h1>4. 边框内圆角</h1>
+
+                <div className="box4-1">
+                    I have a nice subtle inner rounding, don’t I look pretty?
+                </div>
             </div>
         )
     }

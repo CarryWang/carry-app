@@ -61,10 +61,39 @@
   //灵活的背景定位
   .box3-1{
     @include baseBox;
+    width: 200px;
+    height: 120px;
     background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
     background-position: right 20px bottom 10px;
   }
   .box3-2{
-    
+    @include baseBox;
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a bottom right; /* 或 100% 100% */
+    background-origin: content-box;
+  }
+
+  .box3-3{
+    @include baseBox;
+    width: 200px;
+    height: 120px;
+    background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat #58a;
+    background-position: calc(100% - 20px) calc(100% - 10px);
+  }
+
+  //边框内圆角
+  .box4-1{
+    outline: .6em solid #655;
+    box-shadow: 0 0 0 .4em #655;
+
+    width: 200px;
+    height: 120px;
+    border-radius: .8em;
+    padding: 1em;
+    margin: 0 auto;
+    background: tan;
+    font: 100%/1.5 sans-serif;
   }
 }
