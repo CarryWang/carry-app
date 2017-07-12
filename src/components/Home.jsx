@@ -1,23 +1,6 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import Chapter1 from './Chapter1'
 import Banner from "./Banner";
-
-
-let obj = {
-    title: 'Cases',
-    name: 'Some Example Design Patterns'
-
-};
-let obj2 = {
-    title: 'Works',
-    name: 'Some Works'
-};
 
 
 export default class App extends Component {
